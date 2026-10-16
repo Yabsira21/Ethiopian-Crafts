@@ -1,4 +1,4 @@
-export const Product= [
+export const products= [
 {
 id: "1",
 name: "Traditional Woven Basket",
@@ -100,3 +100,4 @@ description:
 available: true,
 },
 ];
+export const categories = ["All", ...new Set(products.map((p) => p.category))];
